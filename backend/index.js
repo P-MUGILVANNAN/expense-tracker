@@ -1,5 +1,5 @@
-require('dotenv').config();
 const express = require('express');
+require('dotenv').config();
 const cors = require('cors');
 const path = require('path');
 const connectDB = require('./config/db');
@@ -13,7 +13,7 @@ const app = express();
 // middleware to handle cors
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: "https://expense-tracker-taupe-ten-26.vercel.app",
     })
 );
 
